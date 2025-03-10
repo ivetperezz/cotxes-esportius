@@ -4,25 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coches Deportivos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: red;
-        }
-        img {
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Los Mejores Coches Deportivos</h1>
-    <p>Descubre los coches deportivos más veloces y exclusivos del mundo.</p>
-    <img src="https://source.unsplash.com/600x400/?sports-car" alt="Coche Deportivo">
+    <header>
+        <h1>Coches Deportivos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido a la web de Coches Deportivos</h2>
+        <p>Descubre los coches más rápidos y lujosos del mundo.</p>
+        <img src="https://source.unsplash.com/800x400/?sports-car" alt="Coche Deportivo">
+    </section>
+
+    <section id="marcas">
+        <h2>Marcas Destacadas</h2>
+        <div class="marca">
+            <h3>Ferrari</h3>
+            <p>Ferrari es sinónimo de velocidad y lujo.</p>
+        </div>
+        <div class="marca">
+            <h3>Lamborghini</h3>
+            <p>Lamborghini es conocido por su diseño agresivo y potencia.</p>
+        </div>
+        <div class="marca">
+            <h3>Porsche</h3>
+            <p>Porsche combina rendimiento con elegancia.</p>
+        </div>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galería de Imágenes</h2>
+        <div class="imagenes">
+            <img src="https://source.unsplash.com/300x200/?ferrari" alt="Ferrari">
+            <img src="https://source.unsplash.com/300x200/?lamborghini" alt="Lamborghini">
+            <img src="https://source.unsplash.com/300x200/?porsche" alt="Porsche">
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
